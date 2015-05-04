@@ -16,6 +16,7 @@ let Socket = class {
       this.connections.push(socket);
 
       connection.on("message", (data) => {
+        socket.trigger("message", [ data, socket ]);
         this.trigger("message", [ data, socket ]);
       });
 
