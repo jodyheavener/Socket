@@ -1,6 +1,6 @@
 # Socket
 
-Really simple module for managing multiple Socket.io connections.
+It's a really simple wrapper script for managing multiple Socket.io connections. I made it for me, but you can use it too.
 
 Cool.
 
@@ -28,3 +28,6 @@ Cool.
 - `hasAlias(key{String}, value{Mixed})` returns Boolean for if the current Connection has the specified alias
 - `send(data{Object})` send a message from the current Connection
 - `isConnected()` returns Boolean for if the current Connection is still connected
+
+**Events**
+- `message(data{Object}, socket{Object})` the current socket Connection recieves a message
